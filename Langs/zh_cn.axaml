@@ -1,6 +1,7 @@
-<ResourceDictionary xmlns="https://github.com/avaloniaui"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+<ResourceDictionary
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
 
     <!--> LauncherX 多语言文档注意事项 <-->
     <!--> 如果您在翻译字段中看到了 {0} 这样的字符串，请将其直接保留在翻译之后的源文当中 <-->
@@ -87,11 +88,11 @@
     <sys:String x:Key="CreateNewAccount">创建新账户</sys:String>
 
     <sys:String x:Key="OfflineAccount">离线账户</sys:String>
-    <sys:String x:Key="MojangAccount">外置登录</sys:String>
+    <sys:String x:Key="MojangAccount">Mojang 账户</sys:String>
     <sys:String x:Key="MicrosoftAccount">Microsoft 账户</sys:String>
 
     <!-- <sys:String x:Key="OnlineAccount">在线账户</sys:String> -->
-    <sys:String x:Key="Email">账户(用户名/邮箱)</sys:String>
+    <sys:String x:Key="Email">电子邮箱</sys:String>
     <sys:String x:Key="UserName">用户名</sys:String>
     <sys:String x:Key="DisplayName">玩家名称</sys:String>
     <sys:String x:Key="Password">密码</sys:String>
@@ -206,20 +207,6 @@
     <sys:String x:Key="NetworkTestDescription">通过网络连接测试，您可以更好地了解您当前的网络状况，包括延迟，服务器状态等一些基础信息。同时也能为您排除一些简单故障。</sys:String>
 
     <sys:String x:Key="LauncherLogLevel">启动器日志记录等级</sys:String>
-    <sys:String x:Key="DcAndPp">数据采集和隐私政策</sys:String>
-    <sys:String x:Key="AllowDataCollection">允许采集启动器运行数据</sys:String>
-
-    <sys:String x:Key="WhatDataWeCollect">我们会采集哪些数据</sys:String>
-    <sys:String x:Key="WhatDataWeCollectContent">
-        我们会收集您计算机的一些常见数据，例如使用的语言、操作系统版本。同时我们还会收集有关启动器的一些运行数据，例如崩溃、异常、
-        使用时长、启动的游戏和游戏时长。这些数据都将经过妥善的处理并保管在安全的服务器上。
-    </sys:String>
-
-    <sys:String x:Key="HowWeUseData">我们如何使用这些数据</sys:String>
-    <sys:String x:Key="HowWeUseDataContent">
-        这些数据将会帮助我们来完成用户群体的分析和错误分析。例如地区和语言设定将会让我们更好的了解用户群体的分布地区，产生的错误
-        日志和崩溃信息将会帮助我们更好的解决启动器存在的缺陷，并以此将更好的产品体验带给广大用户。
-    </sys:String>
 
     <!--> SettingsPage.xaml <-->
 
@@ -503,7 +490,7 @@
 
     <sys:String x:Key="Offline">离线</sys:String>
     <sys:String x:Key="ChooseLoginType">请选择您的登录方式</sys:String>
-    <sys:String x:Key="ChooseLoginTypeDetail">请选择您的验证方式，如果您不清楚应该使用哪种验证方式，可以先添加一个离线账户。</sys:String>
+    <sys:String x:Key="ChooseLoginTypeDetail">请选择您的验证方式，如果您不清楚应该使用哪种验证方式，请使用 Mojang 验证。</sys:String>
 
     <sys:String x:Key="GlobalNotSet">全局未设定</sys:String>
     <sys:String x:Key="SaveSettingsFailed">设置保存失败</sys:String>
@@ -539,7 +526,7 @@
 
     <sys:String x:Key="AddFriend">添加好友</sys:String>
     <sys:String x:Key="ValidateFriend">好友验证</sys:String>
-    <!-- Error Message -->
+    <!--  Error Message  -->
 
     <sys:String x:Key="CanNotEmpty">此项不能为空</sys:String>
 
@@ -550,9 +537,9 @@
     <!-- <sys:String x:Key="ValidationCode">验证码</sys:String> -->
     <!-- <sys:String x:Key="ValidationCodeHasBeenSent">验证码已经发送到您的邮箱</sys:String> -->
     <!-- <sys:String x:Key="PasswordIsDifferent">两次输入的密码不相同</sys:String> -->
-    <sys:String x:Key="PasswordFormat">密码必须包含大小写字母、数字和除下划线以外的特殊字符</sys:String>
-    <sys:String x:Key="UserNameFormat">只能包含大小写字母、数字、横杠或下划线，长度为 4-16</sys:String>
-    <sys:String x:Key="StringLength">长度必须在{2}-{1}之间</sys:String>
+    <sys:String x:Key="PasswordFormat">密码必须包含大小写字母、数字和符号</sys:String>
+    <sys:String x:Key="UserNameFormat">只能包含大小写字母、数字、横杠或下划线，长度为 6-18</sys:String>
+    <sys:String x:Key="StringLength">长度必须在{0}-{1}之间</sys:String>
     <sys:String x:Key="AutoLogin">自动登录</sys:String>
 
     <sys:String x:Key="HelpAndFeedback">帮助和反馈</sys:String>
@@ -619,7 +606,7 @@
 
     <!-- <sys:String x:Key="ClickToChange">点击修改</sys:String> -->
 
-    <sys:String x:Key="AuthServerHint">可选（通常为https://[域名]/api/yggdrasil/）</sys:String>
+    <sys:String x:Key="AuthServerHint">通常为https://[域名]/api/yggdrasil/</sys:String>
     <!-- <sys:String x:Key="MsLoginDetail">您在上方输入邮箱之后。点击确认，您将在浏览器中完成微软账户的登录。完成之后，启动器将为您添加您的账户。</sys:String> -->
 
     <sys:String x:Key="ProtocolVersion">协议版本</sys:String>
@@ -810,7 +797,8 @@
     <sys:String x:Key="JoinFailed">加入失败</sys:String>
     <!-- <sys:String x:Key="JoinFailedDetail">无法加入房间，{0}</sys:String> -->
 
-    <sys:String x:Key="RoomConnectionStr">我使用 LauncherX 创建了一个联机房间 [{0}] 快加入我的房间吧！#{1}#如果您无法复制 Emoji 串，可以试试这段 ID [{2}]。您也可以复制整段文本来直接导入！
+    <sys:String x:Key="RoomConnectionStr">
+        我使用 LauncherX 创建了一个联机房间 [{0}] 快加入我的房间吧！#{1}#如果您无法复制 Emoji 串，可以试试这段 ID [{2}]。您也可以复制整段文本来直接导入！
     </sys:String>
     <sys:String x:Key="RoomConnectionStrExported">成功将房间连接信息导出到剪切板</sys:String>
 
@@ -821,6 +809,7 @@
     <sys:String x:Key="Java16Description">Java 16：适用于 [1.17] 或更高版本的游戏</sys:String>
     <sys:String x:Key="Java17Description">Java 17：适用于 [1.18 - pre2] 或更高版本的游戏</sys:String>
     <sys:String x:Key="Java21Description">Java 21：适用于 [1.20.5] 或更高版本的游戏。使用此版本可能可以提升游戏性能，对旧版本的兼容性极差</sys:String>
+    <sys:String x:Key="Java25Description">Java 25：适用于 [26.1] 或更高版本的游戏。不建议在老游戏上使用该版本</sys:String>
 
     <sys:String x:Key="ResetAllSettings">重置所有设置</sys:String>
     <sys:String x:Key="ResetAllSettingsDetail">注意！这将完全删除启动器的配置文件并重新运行配置向导，此操作无法恢复。</sys:String>
@@ -905,7 +894,7 @@
     <sys:String x:Key="MsAccountLoginInstruction2">并按照网页的提示输入 LauncherX 所显示的一次性验证代码。</sys:String>
     <sys:String x:Key="MsAccountLoginInstruction3">在上述操作完成之后，LauncherX 将自动完成剩余步骤，并将您的账户添加至启动器内。</sys:String>
 
-    <!-- <sys:String x:Key="ModDependencies">模组前置依赖</sys:String> -->
+    <sys:String x:Key="ModDependencies">模组前置依赖</sys:String>
 
     <sys:String x:Key="CreateFolder">创建目录</sys:String>
 
@@ -1032,7 +1021,9 @@
     <sys:String x:Key="LogFileNotFoundDetail">分析器缺少足够的日志文件来创建分析报告，请尝试联系开发者。</sys:String>
     <sys:String x:Key="OtherCausedGameCrashDetail">不确定的原因导致了游戏崩溃，请尝试联系开发者。</sys:String>
 
+    <sys:String x:Key="Me">自己</sys:String>
     <sys:String x:Key="DirectConnect">直连</sys:String>
+    <sys:String x:Key="RelayConnect">中继连接</sys:String>
 
     <sys:String x:Key="ArchiveCorrupted">压缩包损坏，我们无法读取压缩文件的内容。</sys:String>
     <sys:String x:Key="ModPackJsonCorruptedDetail">清单文件损坏，我们无法读取清单文件的内容。{0}</sys:String>
@@ -1060,7 +1051,7 @@
     <sys:String x:Key="Customization">自定义</sys:String>
     <sys:String x:Key="ModPack">整合包</sys:String>
     <sys:String x:Key="BukkitPlugins">水桶（Bukkit）插件</sys:String>
-    <sys:String x:Key="Addons">附属添加（Addons）</sys:String>
+    <sys:String x:Key="Addons">附属(Addons)</sys:String>
     <sys:String x:Key="Worlds">地图存档</sys:String>
     <sys:String x:Key="Mods">模组</sys:String>
 
@@ -1125,7 +1116,6 @@
         - 无法正确的识别和检测 Java 运行时的运行状态
         - 严重的体验和性能降级
         - 部分功能出现异常
-
         请再次确认您的系统架构并重新下载 LauncherX。
     </sys:String>
     <sys:String x:Key="TryingToLoginToCsAccount">尝试登录日冕账户</sys:String>
@@ -1147,21 +1137,6 @@
 
     <sys:String x:Key="CheckCSKBArticle">查看 CSKB 文章</sys:String>
     <sys:String x:Key="MojangNoArm64JreSupportWarning">由于 Mojang 官方目前还并未官方支持 Arm64 版本的 JRE 下载。因此，请参阅日冕知识库或是互联网上的教程来手动进行运行时的安装。</sys:String>
-
-    <sys:String x:Key="DataCollectionOptions">数据收集选项</sys:String>
-    <sys:String x:Key="DataCollectionOptionsDetail">LauncherX 使用 Azure Application Insight 来收集部分关键的运行数据和崩溃信息，这能够更好的帮助我们了解用户的使用体验以及及时对影响体验的问题进行修复。</sys:String>
-    <sys:String x:Key="EnableTelemetry">启用遥测</sys:String>
-    <sys:String x:Key="DataCollectionManifest">数据收集清单</sys:String>
-    <sys:String x:Key="DataCollectionTitle1">LauncherX 会收集并传输包括</sys:String>
-    <sys:String x:Key="DataCollectionTitle2">但不限于</sys:String>
-    <sys:String x:Key="DataCollectionTitle3">下表的数据来帮助我们改进：</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail1">- 用户计算机的配置信息</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail2">- 计算机名称</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail3">- 启动器内的网络活动</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail4">- 启动器内的任务调度详情</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail5">- 启动器产生的任何日志信息</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail6">- 部分启动器操作事件</sys:String>
-    <sys:String x:Key="DataCollectionManifestDetail7">- 崩溃信息</sys:String>
 
     <sys:String x:Key="CurseForgeApiLimitWarning">由于 API 的限制，我们至多显示请求到 10,000 个项目。如果您想查看更多的项目，请自行访问 CurseForge 官网。</sys:String>
     <sys:String x:Key="InTotal">共</sys:String>
@@ -1265,7 +1240,7 @@
     <sys:String x:Key="ShaderPackNotFoundDetail">没有找到任何光影</sys:String>
 
 
-    <!-- CurseForge分类 START -->
+    <!--  CurseForge分类 START  -->
     <sys:String x:Key="Teleportation">传送类</sys:String>
     <sys:String x:Key="LuckyBlocks">幸运方块</sys:String>
     <sys:String x:Key="BuildingGadgets">建设工具</sys:String>
@@ -1338,7 +1313,8 @@
     <sys:String x:Key="Vanilla">原版修改</sys:String>
     <sys:String x:Key="Fantasy">奇幻</sys:String>
     <sys:String x:Key="Magic">魔法</sys:String>
-    <sys:String x:Key="CraftTweaker">CraftTweaker相关</sys:String> <!-- 如果太长则把 CraftTweaker 改成 CrT -->
+    <sys:String x:Key="CraftTweaker">CraftTweaker相关</sys:String>
+    <!--  如果太长则把 CraftTweaker 改成 CrT  -->
     <sys:String x:Key="IntegratedDynamics">集成动力相关</sys:String>
     <sys:String x:Key="Realistic">拟真</sys:String>
     <sys:String x:Key="OresAndResources">资源类</sys:String>
@@ -1351,7 +1327,8 @@
     <sys:String x:Key="Modern">现代风格</sys:String>
     <sys:String x:Key="Parkour">跑酷地图</sys:String>
     <sys:String x:Key="BugFixes">错误修复</sys:String>
-    <sys:String x:Key="PerformanceType">性能优化</sys:String> <!-- 与上文Performance区分 使用命名PerformanceType -->
+    <sys:String x:Key="PerformanceType">性能优化</sys:String>
+    <!--  与上文Performance区分 使用命名PerformanceType  -->
     <sys:String x:Key="ModSupport">模组支持</sys:String>
     <sys:String x:Key="Tech">科技类</sys:String>
     <sys:String x:Key="Library">支持库</sys:String>
@@ -1368,14 +1345,65 @@
     <sys:String x:Key="Survival">生存类</sys:String>
     <sys:String x:Key="Animated">动画</sys:String>
     <sys:String x:Key="MapBased">基于地图</sys:String>
-    <sys:String x:Key="X8">8x 材质包</sys:String>
-    <sys:String x:Key="X16">16x 材质包</sys:String>
-    <sys:String x:Key="X32">32x 材质包</sys:String>
-    <sys:String x:Key="X64">64x 材质包</sys:String>
-    <sys:String x:Key="X128">128x 材质包</sys:String>
-    <sys:String x:Key="X256">256x 材质包</sys:String>
+    <sys:String x:Key="LowerThanX8">8x以下材质</sys:String>
+    <sys:String x:Key="X8">8x 材质</sys:String>
+    <sys:String x:Key="X16">16x 材质</sys:String>
+    <sys:String x:Key="X32">32x 材质</sys:String>
+    <sys:String x:Key="X48">48x 材质</sys:String>
+    <sys:String x:Key="X64">64x 材质</sys:String>
+    <sys:String x:Key="X128">128x 材质</sys:String>
+    <sys:String x:Key="X256">256x 材质</sys:String>
     <sys:String x:Key="X512AndHigher">512x及更高材质</sys:String>
-    <!-- CurseForge分类 END -->
+    <!--  CurseForge分类 END  -->
+    <!--  分类补充1  -->
+    <sys:String x:Key="ColoredLighting">光照着色</sys:String>
+    <sys:String x:Key="CoreShaders">核心光影</sys:String>
+    <sys:String x:Key="Cursed">受诅咒(Bug)</sys:String>
+    <sys:String x:Key="Decoration">装饰</sys:String>
+    <sys:String x:Key="Entities">实体</sys:String>
+    <sys:String x:Key="Environment">环境</sys:String>
+    <sys:String x:Key="Equipment">装备</sys:String>
+    <sys:String x:Key="Foliage">叶子</sys:String>
+    <sys:String x:Key="GameMechanics">游戏机制</sys:String>
+    <sys:String x:Key="Gui">界面修改</sys:String>
+    <sys:String x:Key="Items">物品</sys:String>
+    <sys:String x:Key="KitchenSink">厨房和水槽</sys:String>
+    <sys:String x:Key="Lightweight">轻量化</sys:String>
+    <sys:String x:Key="Locale">本地化</sys:String>
+    <sys:String x:Key="Management">管理</sys:String>
+    <sys:String x:Key="Modded">修改/模组化</sys:String>
+    <sys:String x:Key="Models">模型</sys:String>
+    <sys:String x:Key="Optimization">优化</sys:String>
+    <sys:String x:Key="PathTracing">路径追踪</sys:String>
+    <sys:String x:Key="Pbr">PBR</sys:String>
+    <sys:String x:Key="Potato">渣机</sys:String>
+    <sys:String x:Key="Reflections">反射</sys:String>
+    <sys:String x:Key="Screenshot">屏幕截图</sys:String>
+    <sys:String x:Key="SemiRealistic">半拟真</sys:String>
+    <sys:String x:Key="Shadows">阴影</sys:String>
+    <sys:String x:Key="Simplistic">简化</sys:String>
+    <sys:String x:Key="Social">社交</sys:String>
+    <sys:String x:Key="storage">储物</sys:String>
+    <sys:String x:Key="Themed">主题化</sys:String>
+    <sys:String x:Key="Transportation">交通</sys:String>
+    <!--  分类补充1 FILL  -->
+    <sys:String x:Key="Shaders">光影</sys:String>
+    <sys:String x:Key="Audio">声音</sys:String>
+    <sys:String x:Key="Blocks">方块</sys:String>
+    <sys:String x:Key="Dimensions">维度</sys:String>
+    <sys:String x:Key="Challenging">挑战</sys:String>
+    <sys:String x:Key="Bloom">光照(Bloom)</sys:String>
+    <sys:String x:Key="TwilightForest">暮色森林</sys:String>
+    <sys:String x:Key="Atmosphere">环境</sys:String>
+    <sys:String x:Key="VanillaLike">类原生</sys:String>
+    <sys:String x:Key="AppliedEnergistics2">应用能源2(AE2)</sys:String>
+    <sys:String x:Key="Tweaks">修改(Tweaks)</sys:String>
+    <sys:String x:Key="Horror">恐怖</sys:String>
+    <sys:String x:Key="Cartoon">卡通</sys:String>
+
+
+    <!--  分类补充1 END  -->
+
 
     <sys:String x:Key="StartingBackendHost">开始初始化后端主机</sys:String>
     <sys:String x:Key="ConnectedToSignalR">成功与 SignalR 服务器建立连接</sys:String>
@@ -1463,10 +1491,8 @@
         您疑似打开了一个包含待安装的 LX 完整包的文件。
         该完整包是由第三方分发的，请自行确认该包的来源以及确认其并没有遭到篡改。
         您可以通过以下信息来确认该包的完整性：
-
         SHA1: {0}
         MD5: {1}
-
         如果您并不知道这是什么意思，请直接点击下方的删除按钮。
     </sys:String>
     <sys:String x:Key="IgnoreAndDelete">忽略并删除</sys:String>
@@ -1503,6 +1529,7 @@
 
     <sys:String x:Key="DownloadAllDependenciesIfPossible">下载全部依赖（如果存在）</sys:String>
     <sys:String x:Key="DownloadFileToPathDetail">将文件下载到 {0} 的 {1} 目录</sys:String>
+    <sys:String x:Key="CopyFileToPathDetail">将文件复制到 {0} 的 {1} 目录</sys:String>
 
     <sys:String x:Key="UseCurseForgeToCheck">使用 CurseForge 检查</sys:String>
     <sys:String x:Key="UseModrinthToCheck">使用 Modrinth 检查</sys:String>
@@ -1559,7 +1586,7 @@
     <sys:String x:Key="RoomNotExistsDetail">房间不存在，请检查房间 ID。</sys:String>
     <sys:String x:Key="SessionDetachedDetail">用户态失效，请尝试重启启动器。</sys:String>
 
-	<sys:String x:Key="AlreadyInRoomDetail">您已经在房间中了！请先退出房间。</sys:String>
+    <sys:String x:Key="AlreadyInRoomDetail">您已经在房间中了！请先退出房间。</sys:String>
     <sys:String x:Key="GroupIsFullDetail">房间已满。</sys:String>
     <sys:String x:Key="PasswordIncorrectDetail">房间密码错误，请检查密码。</sys:String>
     <sys:String x:Key="NetworkControllerErrorDetail">网络控制器尚未初始化或出错，请联系管理员。</sys:String>
@@ -1581,7 +1608,7 @@
     <sys:String x:Key="AddingCoreSupportFiles">[{0}] 向整合包添加核心支持文件...</sys:String>
     <sys:String x:Key="AddingFilesToModPack">[{0}] 向整合包添加文件...</sys:String>
     <sys:String x:Key="TryStripModPackSize">尝试缩减整合包大小...</sys:String>
-	<sys:String x:Key="FailedToStripModPackSize">尝试缩减整合包大小时出现错误</sys:String>
+    <sys:String x:Key="FailedToStripModPackSize">尝试缩减整合包大小时出现错误</sys:String>
     <sys:String x:Key="DownloadingLauncherStableBuild">下载 LauncherX 稳定版 [{0}]...</sys:String>
     <sys:String x:Key="ModPackFileSaved">[{0}] 文件保存完成</sys:String>
     <sys:String x:Key="ModPackExportHashMessage">压缩后的完整包导出完成，下面是该包相关的检验信息，请提供给用户以方便验证完整包的完整性：</sys:String>
@@ -1713,12 +1740,12 @@
     <sys:String x:Key="ContributorsDescription">这里将展示所有参与过 LauncherX 第三方资源贡献的用户。我们感谢所有用户的无私奉献！</sys:String>
     <sys:String x:Key="ContributorList">贡献者列表</sys:String>
     <sys:String x:Key="ContributorListDetail">在下面我们将按照贡献数量来排序所有的贡献者。由于数量限制，该页面最多显示 100 个条目。如果您成功完成了超 50 次贡献，您可以联系管理员免费开通 LauncherX 的内测权限，并在未来获得更多福利！</sys:String>
-    
+
     <sys:String x:Key="UseMultiSourcesCompletion">使用多重源补全</sys:String>
     <sys:String x:Key="MultiSourcesCompletionPolicy">多重源补全策略</sys:String>
 
     <sys:String x:Key="NoGameFound">没有找到游戏</sys:String>
-    <sys:String x:Key="NoGameFoundDetail">我们没有找到任何游戏，您可以点击下面的按钮跳转到下载页面。</sys:String>
+    <sys:String x:Key="NoGameFoundDetail">我们没有找到任何游戏，您可以点击下面的按钮跳转到下载页面。也有可能是启动器正在索引游戏。</sys:String>
     <sys:String x:Key="GenerateExportSettings">生成导出配置</sys:String>
     <sys:String x:Key="EditExportSettings">编辑导出配置</sys:String>
     <sys:String x:Key="GameDirectoryManagement">游戏目录管理</sys:String>
